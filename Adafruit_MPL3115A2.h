@@ -16,6 +16,8 @@
     v1.0  - First release
 */
 /**************************************************************************/
+#ifndef __MPL3115A2_H__
+#define __MPL3115A2_H__
 
 #if ARDUINO >= 100
  #include "Arduino.h"
@@ -24,9 +26,9 @@
 #endif
 
 #ifdef __AVR_ATtiny85__
- #include <TinyWireM.h>
+#include <TinyWireM.h>
 #else
- #include <Wire.h>
+#include <Wire.h>
 #endif
 
 /*=========================================================================
@@ -104,3 +106,5 @@ class Adafruit_MPL3115A2{
   uint8_t mode;
 
 };
+
+#endif
